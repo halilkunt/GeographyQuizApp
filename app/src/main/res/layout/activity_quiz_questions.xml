@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".QuizQuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:progress="0"
+                android:progressDrawable="@drawable/circular"
+                >
+
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/levelTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level 1"
+                android:textColor="#61605B"
+                android:textSize="40dp"
+                android:textAllCaps="true"
+                android:layout_marginLeft="30dp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="What country does this flag belong to?"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#F0F8FF"
+            android:textSize="26sp"></TextView>
+
+        <ImageView
+            android:id="@+id/questionImage"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/argentinaflag">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/opt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15dp"
+            android:textColor="#042C33"
+            android:textSize="18sp"
+            android:text="Argentina?">
+        </TextView>
+        <TextView
+            android:id="@+id/opt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15dp"
+            android:textColor="#042C33"
+            android:textSize="18sp"
+            android:text="Argentina?">
+        </TextView>
+        <TextView
+            android:id="@+id/opt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15dp"
+            android:textColor="#042C33"
+            android:textSize="18sp"
+            android:text="Argentina?">
+        </TextView>
+        <TextView
+            android:id="@+id/opt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:background="@drawable/default_option_border_bg"
+            android:padding="15dp"
+            android:textColor="#042C33"
+            android:textSize="18sp"
+            android:text="Argentina?">
+        </TextView>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/design_default_color_primary"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            >
+
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
